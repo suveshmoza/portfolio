@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Element } from 'react-scroll';
 import BlogCard from './BlogCard';
 
 interface IArticle {
@@ -42,7 +43,7 @@ const Blogs = () => {
 	}, []);
 
 	return (
-		<div name="blogs" className="p-4 min-h-screen">
+		<Element name="blogs" className="p-4 min-h-screen">
 			<div className="h-screen flex flex-col justify-center items-center gap-4">
 				<div className="font-semibold text-4xl md:text-6xl">Blogs</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 mt-2 gap-4">
@@ -65,7 +66,7 @@ const Blogs = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</Element>
 	);
 };
 

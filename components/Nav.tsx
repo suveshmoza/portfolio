@@ -5,7 +5,7 @@ import { FcNightLandscape, FcLandscape } from 'react-icons/fc';
 
 const Nav = () => {
 	return (
-		<nav className="sticky top-1 z-50 flex rounded-full justify-between items-center py-2 backdrop-filter backdrop-blur-3xl bg-black/20  ">
+		<nav className="sticky top-1 z-50 flex rounded-full justify-between items-center py-2 backdrop-filter backdrop-blur-md bg-black/20  ">
 			<Image
 				alt="photo"
 				src={logo}

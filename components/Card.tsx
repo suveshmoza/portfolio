@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type CardProps = {
 	description: string;
 	title: string;
@@ -34,10 +36,12 @@ const Card = ({
 				</div>
 			</div>
 			<div className="flex-shrink-0 p-4">
-				<img
+				<Image
 					src={imgURL}
 					alt="Project Logo"
 					className="w-16 h-16 object-fit rounded-full"
+					width="64"
+					height="64"
 				/>
 			</div>
 		</div>
