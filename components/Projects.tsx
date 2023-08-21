@@ -40,7 +40,7 @@ const data = [
 
 const Projects = () => {
 	return (
-		<div className="p-4 md:h-[565px]">
+		<div name="projects" className="p-4 md:h-[565px]">
 			<div className="h-full flex flex-col justify-center items-center gap-4">
 				<div className="font-semibold text-4xl md:text-6xl">Projects</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 mt-2 gap-4">

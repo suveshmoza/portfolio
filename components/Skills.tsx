@@ -23,15 +23,16 @@ const icons = [
 
 const Skills = () => {
 	return (
-		<div className="p-4 h-[615px] md:h-[565px] text-4xl md:text-6xl">
-			<div className="flex flex-col items-center justify-between gap-8">
+		<div name="skills" className="p-4 min-h-screen text-4xl md:text-6xl">
+			<div className="h-screen flex flex-col items-center justify-center gap-4">
 				<div className="font-semibold">Skills</div>
-				<div className="grid grid-cols-5 md:grid-cols-7 gap-4 mt-2">
+				<div className="grid grid-cols-5 md:grid-cols-7 gap-4 md:mt-2">
 					{icons.map((icon) => (
 						<img
 							key={icon}
 							src={`https://skillicons.dev/icons?i=${icon}`}
 							alt={icon}
+							className="h-[60px]"
 						/>
 					))}
 				</div>
