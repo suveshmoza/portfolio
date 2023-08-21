@@ -14,7 +14,10 @@ const Header = () => {
 					</p>
 				</div>
 				<div>
-					<a href="#" className="px-4 py-2 text-lg shadow- bg-gray-800">
+					<a
+						href="#"
+						className="px-4 py-2 text-lg shadow- bg-gray-800 hover:bg-gray-700"
+					>
 						My Resume
 					</a>
 				</div>

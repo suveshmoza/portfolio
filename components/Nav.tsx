@@ -11,10 +11,14 @@ const Nav = () => {
 				className="h-12 w-12 rounded-full ml-2 border-2 border-slate-600"
 			/>
 			<ul className="flex items-center gap-4 md:gap-8">
-				<li className="cursor-pointer">Skills</li>
-				<li className="cursor-pointer">Projects</li>
-				<li className="cursor-pointer">Blogs</li>
-				<li className="cursor-pointer">Github</li>
+				<li className="cursor-pointer hover:text-slate-300">Skills</li>
+				<li className="cursor-pointer hover:text-slate-300">Projects</li>
+				<li className="cursor-pointer hover:text-slate-300">Blogs</li>
+				<li className="cursor-pointer hover:text-slate-300">
+					<a href="https://github.com/suveshmoza" target="_blank">
+						Github
+					</a>
+				</li>
 			</ul>
 			<button className="mr-2">
 				<FcNightLandscape className="h-12 w-12" />

@@ -26,7 +26,7 @@ const Skills = () => {
 		<div className="p-4 h-[615px] md:h-[565px] text-4xl md:text-6xl">
 			<div className="flex flex-col items-center justify-between gap-8">
 				<div className="font-semibold">Skills</div>
-				<div className="grid grid-cols-5 md:grid-cols-7 gap-4 mt-5">
+				<div className="grid grid-cols-5 md:grid-cols-7 gap-4 mt-2">
 					{icons.map((icon) => (
 						<img
 							key={icon}
