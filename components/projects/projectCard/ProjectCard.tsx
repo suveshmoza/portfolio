@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-type CardProps = {
+type ProjectCardProps = {
 	description: string;
 	title: string;
 	liveLink: string;
@@ -8,13 +8,13 @@ type CardProps = {
 	imgURL: string;
 };
 
-const Card = ({
+const ProjectCard = ({
 	description,
 	title,
 	liveLink,
 	githubLink,
 	imgURL,
-}: CardProps) => {
+}: ProjectCardProps) => {
 	return (
 		<div className="flex bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30  shadow-xl border border-slate-600">
 			<div className="p-3 flex flex-col items-start justify-between">
@@ -48,4 +48,4 @@ const Card = ({
 	);
 };
 
-export default Card;
+export default ProjectCard;

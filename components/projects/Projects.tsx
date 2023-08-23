@@ -1,5 +1,5 @@
 import { Element } from 'react-scroll';
-import Card from './Card';
+import ProjectCard from './projectCard/ProjectCard';
 
 const data = [
 	{
@@ -46,7 +46,7 @@ const Projects = () => {
 				<div className="font-semibold text-4xl md:text-6xl">Projects</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 mt-2 gap-4">
 					{data.map((item, index) => (
-						<Card
+						<ProjectCard
 							key={index}
 							title={item.title}
 							description={item.description}

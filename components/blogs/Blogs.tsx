@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
-import BlogCard from './BlogCard';
+import BlogCard from './blogCard/BlogCard';
 
 interface IArticle {
 	title: string;

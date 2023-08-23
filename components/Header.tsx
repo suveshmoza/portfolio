@@ -1,6 +1,8 @@
+import { Element } from 'react-scroll';
+
 const Header = () => {
 	return (
-		<div className="p-4 h-[615px] md:h-[565px]">
+		<Element name="main" className="p-4 h-[615px] md:h-[565px]">
 			<div className="h-full flex flex-col items-center justify-center text-4xl md:text-6xl">
 				<div className="flex flex-col items-center justify-center">
 					<p className="text-6xl my-4">🌱</p>
@@ -16,13 +18,13 @@ const Header = () => {
 				<div>
 					<a
 						href="#"
-						className="px-4 py-2 text-lg shadow- bg-gray-800 hover:bg-gray-700"
+						className="px-4 py-2 text-lg shadow-xl bg-gray-800 hover:bg-gray-700"
 					>
 						My Resume
 					</a>
 				</div>
 			</div>
-		</div>
+		</Element>
 	);
 };
 

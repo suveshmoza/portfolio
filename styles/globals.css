@@ -29,3 +29,22 @@ body {
 	background-color: darkslategrey;
 	font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+.border-animation {
+	position: relative;
+	overflow: hidden;
+}
+
+.border-animation::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: rgb(69, 165, 165);
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.border-animation:hover::after {
+	transform: scaleX(1);
+}
