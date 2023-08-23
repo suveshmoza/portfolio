@@ -17,7 +17,8 @@ const Header = () => {
 				</div>
 				<div>
 					<a
-						href="#"
+						target="_blank"
+						href="https://drive.google.com/file/d/1DqoHdgmcbvtnfnBALrIfBFqH5M5ttYHg/view?usp=sharing"
 						className="px-4 py-2 text-lg shadow-xl bg-gray-800 hover:bg-gray-700"
 					>
 						My Resume

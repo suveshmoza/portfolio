@@ -2,6 +2,7 @@ import Image from 'next/image';
 import logo from '@/assets/images/logo.png';
 import { Link } from 'react-scroll';
 import { FcNightLandscape, FcLandscape } from 'react-icons/fc';
+import { useState } from 'react';
 
 interface INavLinks {
 	title: string;
@@ -15,6 +16,14 @@ const NavLinks: Array<INavLinks> = [
 ];
 
 const Nav = () => {
+	const [darkMode, setDarkMode] = useState(false);
+
+	const handleDarkModeChange = () => {
+		setDarkMode((prev) => !prev);
+		const bgColor = darkMode ? 'darkslategrey' : '#15202B';
+		document.body.style.backgroundColor = bgColor;
+	};
+
 	return (
 		<nav className="sticky top-1 z-50 flex rounded-full justify-between items-center py-2 backdrop-filter backdrop-blur-md bg-black/20  ">
 			<Link to="main" smooth duration={1000}>
@@ -51,8 +60,17 @@ const Nav = () => {
 				</li>
 			</ul>
 			<button className="mr-2">
-				{/* <FcNightLandscape className="p-1 h-12 w-12" /> */}
-				<FcLandscape className="p-1 h-12 w-12" />
+				{!darkMode ? (
+					<FcNightLandscape
+						onClick={handleDarkModeChange}
+						className="p-1 h-12 w-12 fade-in"
+					/>
+				) : (
+					<FcLandscape
+						onClick={handleDarkModeChange}
+						className="p-1 h-12 w-12 fade-in"
+					/>
+				)}
 			</button>
 		</nav>
 	);

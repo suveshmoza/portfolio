@@ -28,6 +28,8 @@ body {
 		rgb(var(--background-start-rgb));
 	background-color: darkslategrey;
 	font-family: 'Bricolage Grotesque', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .border-animation {
@@ -47,4 +49,17 @@ body {
 
 .border-animation:hover::after {
 	transform: scaleX(1);
+}
+
+.fade-in {
+	animation: fadeInAnimation 0.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
