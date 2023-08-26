@@ -43,8 +43,8 @@ const Blogs = () => {
 	}, []);
 
 	return (
-		<Element name="blogs" className="p-4 min-h-screen">
-			<div className="h-screen flex flex-col justify-center items-center gap-4">
+		<Element name="blogs" className="p-4 md:h-[700px]">
+			<div className="mt-16 flex flex-col justify-center items-center gap-4">
 				<div className="font-semibold text-4xl md:text-6xl">Blogs</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 mt-2 gap-4">
 					{articles?.map((article: IArticle, index: number) => (
@@ -56,7 +56,7 @@ const Blogs = () => {
 						/>
 					))}
 				</div>
-				<div className="mt-4">
+				<div className="m-4">
 					<a
 						target="_blank"
 						href="https://suveshmoza.hashnode.dev/"
