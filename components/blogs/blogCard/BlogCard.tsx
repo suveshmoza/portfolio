@@ -6,10 +6,10 @@ type BlogCardProps = {
 
 const BlogCard = ({ description, title, blogURL }: BlogCardProps) => {
 	return (
-		<div className="flex bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30  shadow-xl border border-slate-600">
+		<div className="flex bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30 rounded-xl shadow-xl border border-slate-600">
 			<div className="p-3 flex flex-col items-start justify-between">
 				<h2 className="text-lg font-semibold">{title}</h2>
-				<p className="text-sm  mb-2">{description}</p>
+				<p className="text-sm line-clamp-4 mb-2">{description}</p>
 				<div className="flex space-x-2">
 					<a
 						href={blogURL}

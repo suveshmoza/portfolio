@@ -60,7 +60,7 @@ const Blogs = () => {
 					<a
 						target="_blank"
 						href="https://suveshmoza.hashnode.dev/"
-						className="px-4 py-2 text-lg shadow- bg-gray-800 hover:bg-gray-700"
+						className="px-6 py-2 text-lg rounded-full shadow-xl border backdrop-filter backdrop-blur-md bg-slate-800/20 hover:bg-slate-800/60 transition-all duration-300 ease-in-out"
 					>
 						See More...
 					</a>

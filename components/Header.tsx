@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Element } from 'react-scroll';
 
 const Header = () => {
@@ -15,14 +16,15 @@ const Header = () => {
 						functional websites.
 					</p>
 				</div>
+
 				<div>
-					<a
+					<Link
 						target="_blank"
-						href="https://drive.google.com/file/d/1pnw3Twq7UNFK6j1OmdNM47VvSVB1F4Jp/view?usp=sharing"
-						className="px-4 py-2 text-lg shadow-xl bg-gray-800 hover:bg-gray-700"
+						href="https://drive.google.com/file/d/1pqbNQ77bSOuugdC-HllYDZ_gQfPKBlXm/view?usp=sharing"
+						className="px-6 py-2 text-lg rounded-full shadow-xl border backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/50 transition-all duration-300 ease-in-out"
 					>
 						My Resume
-					</a>
+					</Link>
 				</div>
 			</div>
 		</Element>

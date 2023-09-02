@@ -16,7 +16,7 @@ const ProjectCard = ({
 	imgURL,
 }: ProjectCardProps) => {
 	return (
-		<div className="flex bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30  shadow-xl border border-slate-600">
+		<div className="flex rounded-xl bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30  shadow-xl border border-slate-600">
 			<div className="p-3 flex flex-col items-start justify-between">
 				<h2 className="text-lg font-semibold">{title}</h2>
 				<p className="text-sm  mb-2">{description}</p>
