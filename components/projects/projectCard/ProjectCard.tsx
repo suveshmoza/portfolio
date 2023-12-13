@@ -3,47 +3,19 @@ import Image from 'next/image';
 type ProjectCardProps = {
 	description: string;
 	title: string;
-	liveLink: string;
 	githubLink: string;
-	imgURL: string;
 };
 
-const ProjectCard = ({
-	description,
-	title,
-	liveLink,
-	githubLink,
-	imgURL,
-}: ProjectCardProps) => {
+const ProjectCard = ({ description, title, githubLink }: ProjectCardProps) => {
 	return (
-		<div className="flex rounded-xl bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30  shadow-xl border border-slate-600">
-			<div className="p-3 flex flex-col items-start justify-between">
-				<h2 className="text-lg font-semibold">{title}</h2>
-				<p className="text-sm  mb-2">{description}</p>
-				<div className="flex space-x-2">
-					<a
-						href={liveLink}
-						className="border dark:text-white px-4 py-1 rounded-full hover:bg-gray-800/50 hover:text-white ease-in transition-all"
-					>
-						Visit
-					</a>
-					<a
-						href={githubLink}
-						className="border dark:text-white px-4 py-1 rounded-full hover:bg-gray-800/50 hover:text-white ease-in transition-all"
-					>
-						GitHub
-					</a>
-				</div>
-			</div>
-			<div className="flex-shrink-0 p-4">
-				<Image
-					src={imgURL}
-					alt="Project Logo"
-					className="w-16 h-16 object-fit rounded-full"
-					width="64"
-					height="64"
-				/>
-			</div>
+		<div className="group text-gray-400">
+			<a
+				href={githubLink}
+				className=" hover:text-white transition-all duration-150 ease-in-out underline underline-offset-4 "
+			>
+				{title}
+			</a>
+			<p className="mt-4">{description}</p>
 		</div>
 	);
 };

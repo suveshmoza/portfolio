@@ -1,26 +1,17 @@
 type BlogCardProps = {
-	description: string;
 	title: string;
-	blogURL: string;
+	blogURL?: string;
 };
 
-const BlogCard = ({ description, title, blogURL }: BlogCardProps) => {
+const BlogCard = ({ title, blogURL }: BlogCardProps) => {
 	return (
-		<div className="flex bg-gray-800 backdrop-filter backdrop-blur-xl bg-opacity-30 rounded-xl shadow-xl border border-slate-600">
-			<div className="p-3 flex flex-col items-start justify-between">
-				<h2 className="text-lg font-semibold">{title}</h2>
-				<p className="text-sm line-clamp-4 mb-2">{description}</p>
-				<div className="flex space-x-2">
-					<a
-						href={blogURL}
-						target="_blank"
-						className="border dark:text-white px-4 py-1 rounded-full hover:bg-gray-800/50 hover:text-white ease-in transition-all"
-					>
-						Read More
-					</a>
-				</div>
-			</div>
-		</div>
+		<a
+			href={blogURL}
+			target="_blank"
+			className="w-fit rounded-md text-md font-medium ring-offset-background transition-all duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 underline-offset-4 underline mx-1 mb-4 text-gray-400 hover:text-white"
+		>
+			{title}
+		</a>
 	);
 };
 
