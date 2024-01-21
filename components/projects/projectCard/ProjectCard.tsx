@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 type ProjectCardProps = {
 	description: string;
 	title: string;
@@ -8,15 +6,17 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ description, title, githubLink }: ProjectCardProps) => {
 	return (
-		<div className="group text-gray-400">
+		<article className="group text-gray-400">
 			<a
+				role="link"
 				href={githubLink}
-				className=" hover:text-white transition-all duration-150 ease-in-out underline underline-offset-4 "
+				aria-label={`Visit the Github repository for ${title}`}
+				className=" hover:text-white transition-all duration-300 ease-in-out underline underline-offset-4 "
 			>
 				{title}
 			</a>
 			<p className="mt-4">{description}</p>
-		</div>
+		</article>
 	);
 };
 

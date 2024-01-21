@@ -6,11 +6,27 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Suvesh Moza',
+	icons: {
+		icon: '/SM.jpg',
+	},
+	description: 'Suvesh Moza is a full-stack developer from India.',
+	openGraph: {
+		title: 'Suvesh Moza',
+		description: 'Suvesh Moza is a full-stack developer from India.',
+		images: [
+			{
+				url: 'https://i.ibb.co/7vCNVh7/Copy-of-Promises-JS.jpg',
+				width: 1640,
+				height: 924,
+				alt: 'Suvesh Moza',
+			},
+		],
+	},
 };
 
 export default function Page() {
 	return (
-		<div className="flex flex-col items-center bg-black-900 text-white min-h-screen p-4 max-w-4xl mx-auto">
+		<>
 			<Header />
 			<main className="w-full mb-10">
 				<p className="text-lg text-gray-400 mb-5">
@@ -37,7 +53,9 @@ export default function Page() {
 				<h2 className="text-xl font-bold mb-4">Blogs</h2>
 				<Blogs />
 			</main>
+
+			<hr className="mb-4 w-full border-gray-700" />
 			<Footer />
-		</div>
+		</>
 	);
 }

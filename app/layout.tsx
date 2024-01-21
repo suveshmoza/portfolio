@@ -7,7 +7,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body className="bg-black">
+				<div className="flex flex-col items-center  text-white min-h-screen p-4 max-w-4xl mx-auto">
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }
