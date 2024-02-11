@@ -4,18 +4,18 @@ type ProjectCardProps = {
 	githubLink: string;
 };
 
+import AnimatedLink from '@/components/ui/AnimatedLink';
+
 const ProjectCard = ({ description, title, githubLink }: ProjectCardProps) => {
 	return (
-		<article className="group text-gray-400">
-			<a
-				role="link"
+		<article className="">
+			<AnimatedLink
+				title={title}
 				href={githubLink}
-				aria-label={`Visit the Github repository for ${title}`}
-				className=" hover:text-white transition-all duration-300 ease-in-out underline underline-offset-4 "
-			>
-				{title}
-			</a>
-			<p className="mt-4">{description}</p>
+				ariaLabel={`Visit the Github repository for ${title}`}
+			/>
+
+			<p className="mt-4 text-gray-400">{description}</p>
 		</article>
 	);
 };

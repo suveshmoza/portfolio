@@ -1,4 +1,4 @@
-import BlogCard from './blogCard/BlogCard';
+import AnimatedLink from '../ui/AnimatedLink';
 
 async function GetBlogs() {
 	const query = JSON.stringify({
@@ -43,16 +43,21 @@ export default async function Blogs() {
 					},
 					index: number
 				) => (
-					<BlogCard
+					<AnimatedLink
 						key={index}
 						title={blog.node.title}
-						blogURL={blog.node.url}
+						href={blog.node.url}
+						ariaLabel={blog.node.title}
+						styles={{
+							marginBottom: '1rem',
+						}}
 					/>
 				)
 			)}
-			<BlogCard
-				blogURL="https://suveshmoza.hashnode.dev/"
+			<AnimatedLink
 				title="See All Blogs"
+				href="https://suveshmoza.hashnode.dev/"
+				ariaLabel="See All Blogs"
 			/>
 		</div>
 	);

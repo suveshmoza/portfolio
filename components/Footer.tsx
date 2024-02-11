@@ -28,7 +28,7 @@ const socials = [
 const Footer = () => {
 	const currYear = new Date().getFullYear();
 	return (
-		<footer className="w-full mt-auto">
+		<footer className="w-full max-w-4xl mt-auto border-t  border-gray-700 pt-4">
 			<div className="flex justify-between items-center">
 				<p className="text-gray-300">© {currYear} Suvesh Moza</p>
 				<nav>
